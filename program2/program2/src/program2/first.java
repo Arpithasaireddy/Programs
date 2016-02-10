@@ -1,5 +1,6 @@
+package program2;
 
-public class numbers 
+public class first 
 {
 	
 		  public static void main(String[] args)
@@ -20,4 +21,5 @@ public class numbers
 			}
 			
 			
+
 }
