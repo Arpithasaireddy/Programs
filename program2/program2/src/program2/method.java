@@ -1,6 +1,6 @@
 package program2;
 
-public class first {
+public class method {
 
 	public static void main(String[] args) 
 	{
