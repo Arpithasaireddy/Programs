@@ -1,6 +1,6 @@
 package program2;
 
-public class method {
+public class run {
 
 	public static void main(String[] args) 
 	{
