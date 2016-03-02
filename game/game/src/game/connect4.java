@@ -24,10 +24,7 @@ public class connect4
     }
 
 
-    
-  
-
-     private static char getWinnerInColumns(char[][] field) {
+    private static char getWinnerInColumns(char[][] field) {
         
         for (int column = 0; column < 7; ++column) {
             int count = 0;
@@ -51,11 +48,7 @@ public class connect4
     }
  
   
-       
-                
-       
-        
-    public static char getWinner(char[][] field) 
+        public static char getWinner(char[][] field) 
     {
         char winner = getWinnerInColumns(field);
         if (winner != ' ') return winner;
@@ -95,9 +88,9 @@ public class connect4
         printField(field);
 
     
-        boolean isBlue = true;
+        boolean Blue = true;
         while (true) {
-            if (isBlue)
+            if (Blue)
                 System.out.println("Blue's turn!");            
             else 
                 System.out.println("Pink's turn!");
@@ -109,7 +102,7 @@ public class connect4
                 continue;
             }
             
-            if (!putDisk(field, column - 1, isBlue ? 'B' : 'P')) {
+            if (!putDisk(field, column - 1, Blue ? 'B' : 'P')) {
                 System.out.println("This column is filled! Choose another one.");
                 continue;
             }
@@ -131,7 +124,7 @@ public class connect4
                 break;
             }
            
-            isBlue = !isBlue;
+            Blue = !Blue;
         }
     }
 }
