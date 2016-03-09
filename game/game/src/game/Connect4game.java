@@ -12,7 +12,7 @@ public class Connect4game
 	        if (field[0][column] != ' ')
 	            return false;
 
-	        for (int row = 0; row < 7; row++)
+	        for (int row = 0; row < 6; row++)
 	        {
 	                if (field[row][column] != ' ')
 	                {
@@ -32,7 +32,7 @@ public class Connect4game
 	        for (int column = 0; column < 7; ++column) {
 	            int count = 0;
 	            
-	            for (int row = 1; row < 7; ++row) {
+	            for (int row = 1; row < 6; ++row) {
 	                if (field[row][column] != ' ' &&
 	                    field[row][column] == field[row-1][column])
 	                    ++count;
@@ -65,7 +65,7 @@ public class Connect4game
 	    }
 
 	    public static void printField(char[][] field) {
-	        for (int row = 0; row < 7; row++) {
+	        for (int row = 0; row < 6; row++) {
 	            System.out.print("| ");
 	            for (int col = 0; col < 7; col++)
 	                System.out.print(field[row][col] + "| ");
@@ -74,7 +74,7 @@ public class Connect4game
 
 	        // Print bottom line
 	        for (int col = 0; col < 7; col++)
-	            System.out.print("---");
+	            System.out.print("- -");
 	        System.out.println();
 	    }
 
@@ -82,9 +82,9 @@ public class Connect4game
 	    {
 	        input = new Scanner(System.in);
 	     
-	        char[][] field = new char[7][7];
+	        char[][] field = new char[6][7];
 
-	        for (int i = 0; i < 7; i++)
+	        for (int i = 0; i < 6; i++)
 	            for (int j = 0; j < 7; j++)
 	                field[i][j] = ' ';
 	        
