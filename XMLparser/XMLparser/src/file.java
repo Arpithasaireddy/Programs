@@ -1,12 +1,11 @@
 import java.util.Scanner;
-public class XMLparser {
+public class file {
 	
+  private static Scanner input;
 
-
-	private static Scanner input;
-
-	public static void main(String[] args) {
-			input = new Scanner(XMLparser.class.getResourceAsStream("input.data"));
+		public static void main(String[] args) 
+		{
+			input = new Scanner(file.class.getResourceAsStream("input.data"));
 			
 		while(input.hasNextLine())
 			{
@@ -28,4 +27,6 @@ public class XMLparser {
 			System.out.println(line);
 			}
 		}}
+	
+
 
